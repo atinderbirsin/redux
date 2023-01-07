@@ -45,7 +45,7 @@ function SongList() {
   })
 
   return (
-    <div className="border-t border-gray-500 w-10/12 flex justify-between p-2">
+    <div className="border-t border-gray-500 w-10/12 flex justify-between p-2 flex-wrap-reverse max-sm:justify-center">
       <div>{renderedSongs}</div>
 
       <div>

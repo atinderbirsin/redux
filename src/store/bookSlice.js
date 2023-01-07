@@ -5,13 +5,21 @@ const bookSlice = createSlice({
     initialState: [],
     reducers: {
         addBook(state, action) {
-
+            return [
+                ...state,
+                action.payload,
+            ]
         },
         removeBook(state, action) {
+            const updatedState = [...state];
+            updatedState.splice(action.payload, 1);
 
+            return [
+                ...updatedState,
+            ]
         },
-        resetBook(state, action) {
-
+        resetBook() {
+            return [];
         },
     }
 });
