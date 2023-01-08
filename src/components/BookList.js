@@ -1,6 +1,6 @@
 import { AiFillDelete, AiOutlinePlus } from "react-icons/ai";
 import { useSelector, useDispatch } from "react-redux";
-import { addBook, removeBook } from "../store/bookSlice";
+import { addBook, removeBook } from "../store";
 import Button from "./Button";
 
 function generateBookName() {

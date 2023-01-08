@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import BookList from "../components/BookList";
 import Button from "../components/Button";
 import Panel from "../components/Panel";
-import { resetBook } from "../store/bookSlice";
+import { resetBook } from "../store";
 
 function BooksPage() {
   const dispatch = useDispatch();

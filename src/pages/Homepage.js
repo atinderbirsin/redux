@@ -1,8 +1,7 @@
 import Button from "../components/Button";
 import SongList from "../components/SongList";
 import { useDispatch } from "react-redux";
-import { resetSong } from "../store/songSlice";
-import { resetBook } from "../store/bookSlice";
+import { reset } from "../store";
 import BookList from "../components/BookList";
 import { GiLoveSong } from "react-icons/gi";
 import { BsBookHalf } from "react-icons/bs";
@@ -13,8 +12,7 @@ function HomePage() {
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {
-    dispatch(resetSong());
-    dispatch(resetBook());
+    dispatch(reset());
   };
 
   return (
